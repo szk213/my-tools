@@ -4,6 +4,9 @@
 
 ## 使い方
 
-config.jsonに変換前,変換後のファイルを指定
+config.json に変換前,変換後のフォルダパスを指定
 
 `node main.js`
+
+- jpg のみ
+- exif の撮影日があるファイルのみ

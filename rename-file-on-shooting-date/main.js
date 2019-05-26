@@ -40,6 +40,9 @@ async function main() {
   Promise.all(
     files.map(async filePath => {
       const shootingDate = await getShootingDate(filePath);
+      if (!shootingDate) {
+        return;
+      }
       return fs.rename(
         filePath,
         path.join(output, getNewFileName(shootingDate))
